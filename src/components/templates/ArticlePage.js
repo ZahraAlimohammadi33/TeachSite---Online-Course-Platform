@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './course.module.css'
+import Link from 'next/link';
 
 function ArticlePage({articleData}) {
 
@@ -53,5 +54,6 @@ function ArticlePage({articleData}) {
     
   )
 }
+
 
 export default ArticlePage
