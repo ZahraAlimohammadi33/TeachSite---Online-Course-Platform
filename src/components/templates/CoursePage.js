@@ -70,9 +70,9 @@ function CoursePage({courseData}) {
             <span>امتیاز دوره:</span>
 
             <span className={styles.score}>
-              [...Array(courseData.score)].map((_, i)=>{
+              {[...Array(courseData.score)].map((_, i) => (
                 <FaStar key={i} />
-            })
+              ))}
             </span>
           </div>
           <button>افزودن به دوره های من</button>
@@ -81,5 +81,6 @@ function CoursePage({courseData}) {
     </div>
   )
 }
+
 
 export default CoursePage
