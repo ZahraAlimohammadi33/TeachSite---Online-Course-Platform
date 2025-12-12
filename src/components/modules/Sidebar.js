@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { CgProfile } from "react-icons/cg";
-import styles from "@/templates/Account.module.css";
+import styles from "@/templates/account.module.css";
 import { useRouter } from "next/navigation";
 import Item from './Item';
 
@@ -74,5 +74,6 @@ const clickHandler = (name)=>{
     </div>
   )
 }
+
 
 export default Sidebar
