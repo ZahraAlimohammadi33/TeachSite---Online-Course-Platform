@@ -7,13 +7,14 @@ import { separator } from '@/utils/Operations';
 import Link from 'next/link';
 
 function Card({item , type , titleBtn}) {
+  const url = process.env.BASE_URL;
   return (
     <div>
         <Image 
             width={250}
             height={150}
             alt='image'
-            src={}
+            src={`${url.concat(item.image)}`}
         />
         <div>{item.title}</div>
         <p>{item.description}</p>
@@ -48,5 +49,6 @@ function Card({item , type , titleBtn}) {
     </div>
   )
 }
+
 
 export default Card
